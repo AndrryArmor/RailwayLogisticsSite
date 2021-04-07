@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <title>Звіти бригади №1 - Технології .NET розробки веб-додатків</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Files copy from MaxCDN -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        .attribute {
+            background-color: rgb(230, 255, 230);
+        }
+
+        .method {
+            background-color: rgb(230, 230, 255);
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <!-- Шапка сайту з навігацією між лабораторними роботами -->
+    <nav class="container-fluid navbar navbar-default">
+        <h1 class="text-center">Звіти з предмету "Технології .NET розробки веб-додатків"</h1>
+        <ul class="nav nav-pills flex-center wrappable">
+            <li><a href="../Lab1/Lab1.html">Лаб. №1</a></li>
+            <li><a href="#">Лаб. №2</a></li>
+            <li><a href="../Lab3/Lab3.html">Лаб. №3</a></li>
+            <li><a href="#">Лаб. №4</a></li>
+            <li><a href="#">Лаб. №5</a></li>
+            <li><a href="#">Лаб. №6</a></li>
+            <li><a href="#">Лаб. №7</a></li>
+            <li><a href="#">Лаб. №8</a></li>
+            <li><a href="#">Лаб. №9</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Бокова навігація з випадаючим меню -->
+            <div class="col-sm-3 sidenav">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="../index.html">
+                            <h4>На головну<h4>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            1 Тема, мета та постановка задачі ЛР№2
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('1-1')">
+                                    1.1 Тема, мета та постановка задачі ЛР№2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            2 Проектування структури ПЗ
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('2-1')">
+                                    2.1 Таблиця класів (клас + атрибути + методи)</a></li>
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('2-2')">
+                                    2.2 UML-діаграма класів</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            3 Кодування (програмування)
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('3-1')">
+                                    3.1 Файлова структура проекту</a></li>
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('3-2')">
+                                    3.2 Програмні коди класів з конструкторами</a></li>
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('3-3')">
+                                    3.3 Програмний код класу Program. Результат виконання програми.</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            4 Впровадження та супровід ПЗ
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RailwayLogistics/">4.1 Папка з проектом</a></li>
+                            <li><a href="RailwayLogistics/RailwayLogistics/bin/Debug/RailwayLogistics.exe">4.2 Запуск
+                                    EXE-файла</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            5 Висновки
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('5-1')">
+                                    5.1 Висновки</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Основний вміст сторінки -->
+            <div class="col-sm-9 main-content">
+                <h3>Лабораторна робота №2. Конструктори. Модифікатори доступу в C# і UML. Діаграми класів. Відношення
+                    між класами.</h3><br>
+                <!-- 1.1 Тема, мета та постановка задачі ЛР№2 -->
+                <div id="1-1">
+                    <h4>1.1 Тема, мета та постановка задачі ЛР№2</h4>
+                    <p><strong>Тема роботи:</strong> Конструктори. Модифікатори доступу в C# і UML. Діаграми класів.
+                        Відношення між
+                        класами.</p>
+                    <p><strong>Мета роботи:</strong> Здійснити об’єктно-орієнтоване проектування з урахуванням
+                        модифікаторів доступу в C#
+                        и UML і добавлення конструкторів у діаграму класів та реалізація їх у програмному коді. Вивчити
+                        особливості використання різних видів конструкторів. Доповнити програму конструкторами різних
+                        видів.</p>
+                    <p><strong>Постановка задачі.</strong>
+                    <ol>
+                        <li>Доповнити інтерфейси та реалізації класів методами-конструкторами класів (використати
+                            конструктори по умовчанню, ініціалізації (введення значень з клавіатури, завдання їх за
+                            виразами та через виклик інших методів-членів класу).</li>
+                        <li>Протестувати програму, демонструючи послідовність викликів конструкторів виведенням на екран
+                            повідомлень про створення об’єктів.</li>
+                        <li>Продемонструвати створення об’єктів за допомогою різних видів конструкторів:
+                            <ul>
+                                <li>через ініціалізацію значень атрибутів класів списком аргументів, використовуючи
+                                    конструктор ініціалізації;</li>
+                                <li>через присвоєння одних об’єктів іншим того самого типу, використовуючи конструктор
+                                    копіювання;</li>
+                                <li>створення об’єкта за допомогою конструктора за замовчуванням.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+                <!-- 2.1 Таблиця класів (клас + атрибути + методи) -->
+                <div id="2-1" hidden>
+                    <h4>2.1 Таблиця класів (клас + атрибути + методи)</h4>
+                    <table class="table table-bordered">
+                        <!-- Table header -->
+                        <tr style="background-color: whitesmoke;">
+                            <th>Назва класу</th>
+                            <th>Атрибути/методи</th>
+                            <th>Призначення атрибутів/методів</th>
+                        </tr>
+                        <!-- #region Клас Administrator -->
+                        <tr>
+                            <td rowspan="6">Administrator</td>
+                            <td class="attribute">Name</td>
+                            <td>Ім'я адміністратора</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">System</td>
+                            <td>Система, з якою працює з адміністратор</td>
+                        </tr>
+                        <tr>
+                            <td class="method">GetDeliveries()</td>
+                            <td>Повертає список нових замовлень</td>
+                        </tr>
+                        <tr>
+                            <td class="method">GetStations()</td>
+                            <td>Повертає список станцій залізниці</td>
+                        </tr>
+                        <tr>
+                            <td class="method">AddTrainToDelivery()</td>
+                            <td>Додає потяг до замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="method">MarkAsInProgress()</td>
+                            <td>Змінює статус замовлення на "Доставляється"</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Client -->
+                        <tr>
+                            <td rowspan="4">Client</td>
+                            <td class="attribute">Name</td>
+                            <td>Ім'я клієнта</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">System</td>
+                            <td>Система, з якою працює клієнт</td>
+                        </tr>
+                        <tr>
+                            <td class="method">GetDeliveries()</td>
+                            <td>Повертає список замовлень клієнта</td>
+                        </tr>
+                        <tr>
+                            <td class="method">AddDelivery()</td>
+                            <td>Додає замовлення клієнта для доставки</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Delivery -->
+                        <tr>
+                            <td rowspan="12">Delivery</td>
+                            <td class="attribute">Status</td>
+                            <td>Статус замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Good</td>
+                            <td>Опис товару</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Weight</td>
+                            <td>Маса товару</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Volume</td>
+                            <td>Об'єм</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Price</td>
+                            <td>Ціна замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">DepartureStation</td>
+                            <td>Станція відправлення</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">ArrivalStation</td>
+                            <td>Станція прибуття</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">RouteLength</td>
+                            <td>Довжина маршруту</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Trains</td>
+                            <td>Потяги, що доставлятимуть замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="method">ChangeStatus()</td>
+                            <td>Змінює статус замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="method">AddTrain()</td>
+                            <td>Додає потяг, що доставлятиме замовлення</td>
+                        </tr>
+                        <tr>
+                            <td class="method">CountPrice()</td>
+                            <td>Вираховує ціну товару</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас System -->
+                        <tr>
+                            <td rowspan="11">System</td>
+                            <td class="attribute">IsStarted</td>
+                            <td>Показує, чи система запущена</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Administrator</td>
+                            <td>Адміністратор, який працює з системою</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Stations</td>
+                            <td>Список станцій залізниці</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Deliveries</td>
+                            <td>Список всіх замовлень в системі</td>
+                        </tr>
+                        <tr>
+                            <td class="method">Start()</td>
+                            <td>Запускає роботу системи</td>
+                        </tr>
+                        <tr>
+                            <td class="method">AuthoriseNewClient()</td>
+                            <td>Авторизує нового клієнта в системі</td>
+                        </tr>
+                        <tr>
+                            <td class="method">AddDelivery()</td>
+                            <td>Додає замовлення до системи</td>
+                        </tr>
+                        <tr>
+                            <td class="method">GetDeliveries()</td>
+                            <td>Повертає список усіх замовлень</td>
+                        </tr>
+                        <tr>
+                            <td class="method">CalculateRouteLength()</td>
+                            <td>Обчислює довжину маршруту між станціями</td>
+                        </tr>
+                        <tr>
+                            <td class="method">CreateTrain()</td>
+                            <td>Створює новий потяг</td>
+                        </tr>
+                        <tr>
+                            <td class="method">GetStations()</td>
+                            <td>Повертає список станцій</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Station -->
+                        <tr>
+                            <td rowspan="3">Station</td>
+                            <td class="attribute">Name</td>
+                            <td>Навза станції</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Locomotives</td>
+                            <td>Локомотиви, що знаходяться на станції в даний момент</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Wagons</td>
+                            <td>Вагони, що знаходяться на станції в даний момент</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Train -->
+                        <tr>
+                            <td rowspan="2">Train</td>
+                            <td class="attribute">Locomotive</td>
+                            <td>Локомотив потяга</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Wagons</td>
+                            <td>Список вагонів потяга</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Locomotive -->
+                        <tr>
+                            <td rowspan="2">Locomotive</td>
+                            <td class="attribute">MaximumWeight</td>
+                            <td>Максимальне навантаження вагона</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Weight</td>
+                            <td>Вага самого вагона</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Wagon -->
+                        <tr>
+                            <td rowspan="3">Wagon</td>
+                            <td class="attribute">Weight</td>
+                            <td>Вага вагона</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">MaximumWeight</td>
+                            <td>Макстимальне навантаження вагона</td>
+                        </tr>
+                        <tr>
+                            <td class="attribute">Volume</td>
+                            <td>Об'єм вагона</td>
+                        </tr>
+                        <!-- #endregion -->
+                    </table>
+                </div>
+                <!-- 2.2 UML-діаграма класів -->
+                <div id="2-2" hidden>
+                    <h4>2.2 UML-діаграма класів</h4>
+                    <p>Діаграма об'єктів:</p>
+                    <img src="./Діаграма класів.png" height="600" width="980">
+                    <p>Було додано деякі нові атрибути та методи для розгортання системи, а також змінено зв'язки між
+                        класами через ту ж причину.</p>
+                </div>
+                <!-- 3.1 Файлова структура проекту -->
+                <div id="3-1" hidden>
+                    <h4>3.1 Файлова структура проекту</h4>
+                    <p>Файлова структура проекту:</p>
+                    <img src="./Файлова структура проекту.png">
+                </div>
+                <!-- 3.2 Програмні коди класів з конструкторами -->
+                <div id="3-2" hidden>
+                    <h4>3.2 Програмні коди класів з конструкторами</h4>
+                    <p>Програмний код класу Administrator:</p>
+                    <img src="./Код Administrator.png">
+                    <p>Програмний код класу Client:</p>
+                    <img src="./Код Client.png">
+                    <p>Програмний код класу System:</p>
+                    <img src="./Код System.png">
+                    <p>Програмний код класу Delivery:</p>
+                    <img src="./Код Delivery.png">
+                    <p>Програмний код класу Station:</p>
+                    <img src="./Код Station.png">
+                    <p>Програмний код класу Train:</p>
+                    <img src="./Код Train.png">
+                    <p>Програмний код класу Locomotive:</p>
+                    <img src="./Код Locomotive.png">
+                    <p>Програмний код класу Wagon:</p>
+                    <img src="./Код Wagon.png">
+                    <p></p>
+                </div>
+                <!-- 3.3 Програмний код класу Program. Результат виконання програми. -->
+                <div id="3-3" hidden>
+                    <h4>3.3 Програмний код класу Program. Результат виконання програми.</h4>
+                    <p>Програмний код класу Program:</p>
+                    <img src="./Код Program.png">
+                    <p>Результат виконання програми:</p>
+                    <img src="./Результат виконання програми.png">
+                </div>
+                <!-- 5.1 Висновки -->
+                <div id="5-1" hidden>
+                    <h4>5.1 Висновки</h4>
+                    <p>Висновок: я здійснив об’єктно-орієнтоване проектування з урахуванням модифікаторів доступу в C#
+                        и UML і додавання конструкторів у діаграму класів та реалізацію їх у програмному коді. Я вивчив
+                        особливості використання різних видів конструкторів. Я доповнив програму конструкторами різних
+                        видів. Я зрозумів, що конструктор за замовчуванням використовується для простого створення
+                        нового екземпляра класу. Конструктор ініціалізації використовується для створення об'єктів з
+                        деякими початковими даними, якими ініціалізується клас. Конструктор копіювання використовується
+                        для створення нового об'єкта, що містить ті ж дані, що і інший об'єкт, тобто відбувається
+                        копіювання його даних.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showOnlyThisContentOnClick(id) {
+            $('.col-sm-9 div').hide();
+            $('#' + id).show();
+        };
+    </script>
+</body>
+
+</html>

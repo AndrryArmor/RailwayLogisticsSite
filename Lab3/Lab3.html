@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <title>Звіти бригади №1 - Технології .NET розробки веб-додатків</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Files copy from MaxCDN -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <!-- Шапка сайту з навігацією між лабораторними роботами -->
+    <nav class="container-fluid navbar navbar-default">
+        <h1 class="text-center">Звіти з предмету "Технології .NET розробки веб-додатків"</h1>
+        <ul class="nav nav-pills flex-center wrappable">
+            <li><a href="../Lab1/Lab1.html">Лаб. №1</a></li>
+            <li><a href="../Lab2/Lab2.html">Лаб. №2</a></li>
+            <li><a href="../Lab3/Lab3.html">Лаб. №3</a></li>
+            <li><a href="#">Лаб. №4</a></li>
+            <li><a href="#">Лаб. №5</a></li>
+            <li><a href="#">Лаб. №6</a></li>
+            <li><a href="#">Лаб. №7</a></li>
+            <li><a href="#">Лаб. №8</a></li>
+            <li><a href="#">Лаб. №9</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Бокова навігація з випадаючим меню -->
+            <div class="col-sm-3 sidenav">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="../index.html">
+                            <h4>На головну<h4>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showOnlyThisContentOnClick('1-1')">
+                            1 Тема, мета та постановка задачі ЛР№3
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showOnlyThisContentOnClick('2-1')">
+                            2 Місце розташування проекту. Середовище розробки
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showOnlyThisContentOnClick('3-1')">
+                            3 Класи, з описом властивостей для закритих полів
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showOnlyThisContentOnClick('4-1')">
+                            4 Проектування структури ПЗ
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            5 Кодування (програмування)
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('5-1')">
+                                    5.1 Файлова структура проекту</a></li>
+                            <li><a href="#" onclick="showOnlyThisContentOnClick('5-2')">
+                                    5.2 Програмний код всіх файлів. Результат виконання програми.</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            6 Впровадження та супровід ПЗ
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="RailwayLogistics/">6.1 Папка з проектом</a></li>
+                            <li><a href="RailwayLogistics/RailwayLogistics/bin/Debug/RailwayLogistics.exe">6.2 Запуск
+                                    EXE-файла</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showOnlyThisContentOnClick('7-1')">
+                            7 Висновки
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Основний вміст сторінки -->
+            <div class="col-sm-9 main-content">
+                <h3>Лабораторна робота №3. Використання властивостей. Автоматичні властивості. Скорочений запис властивостей.</h3><br>
+                <!-- 1.1 Тема, мета та постановка задачі ЛР№3 -->
+                <div id="1-1">
+                    <h4>1.1 Тема, мета та постановка задачі ЛР№3</h4>
+                    <p><strong>Тема роботи:</strong> Використання властивостей. Автоматичні властивості. Скорочений запис властивостей.</p>
+                    <p><strong>Мета роботи:</strong> Здійснити введення та виведення даних закритих полів класів, застосовуючі методи-властивості</p>
+                    <p><strong>Постановка задачі.</strong>
+                    <ol>
+                        <li>Доповнити програмну реалізацію класів методами-властивостями класів, введення та виведення даних закритих полів класів.</li>
+                        <li>Протестувати програму, шляхом запуску програми, введенням та виведенням значень закритих полів.</li>
+                    </ol>
+                    </p>
+                    <p>Класи та методи-властивості, в яких реалізуються властивості з приватними полями:
+                        <ol>
+                            <li>Administrator - властивість Name;</li>
+                            <li>Client - властивість Name.</li>
+                            <li>System - властивість Stations</li>
+                            <li>System - властивість Deliveries</li>
+                            <li>Delivery - валстивість Trains</li>
+                        </ol>
+                        В інших класах також реалізовано автовластивості.
+                    </p>
+                </div>
+                <!-- 2.1 Місце розташування проекту. Середовище розробки -->
+                <div id="2-1" hidden>
+                    <h4>2.1 Місце розташування проекту. Середовище розробки</h4>
+                    <p><strong>Github:</strong>
+                        <a href="https://github.com/AndrryArmor/RailwayLogistics">https://github.com/AndrryArmor/RailwayLogistics</a></p>
+                    <p><strong>Середовище розробки:</strong> Visual Studio 2019</p>
+                </div>
+                <!-- 3.1 Класи, з описом властивостей для закритих полів -->
+                <div id="3-1" hidden>
+                    <h4>3.1 Класи, з описом властивостей для закритих полів</h4>                    
+                    <p>Якщо не вказано, що властивість повна, то вона автоматична</p>
+                    <table class="table table-bordered">
+                        <!-- Table header -->
+                        <tr style="background-color: whitesmoke;">
+                            <th>Назва класу</th>
+                            <th>Властивості</th>
+                            <th>Призначення властивостей</th>
+                        </tr>
+                        <!-- #region Клас Administrator -->
+                        <tr>
+                            <td rowspan="2">Administrator</td>
+                            <td>Name</td>
+                            <td>Ім'я адміністратора. <strong>Повна властивість</strong></td>
+                        </tr>
+                        <tr>
+                            <td>System</td>
+                            <td>Система, з якою працює з адміністратор</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Client -->
+                        <tr>
+                            <td rowspan="2">Client</td>
+                            <td>Name</td>
+                            <td>Ім'я клієнта. <strong>Повна властивість</strong></td>
+                        </tr>
+                        <tr>
+                            <td>System</td>
+                            <td>Система, з якою працює клієнт</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Delivery -->
+                        <tr>
+                            <td rowspan="9">Delivery</td>
+                            <td>Status</td>
+                            <td>Статус замовлення.</td>
+                        </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Опис товару</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Маса товару</td>
+                        </tr>
+                        <tr>
+                            <td>Volume</td>
+                            <td>Об'єм</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>Ціна замовлення</td>
+                        </tr>
+                        <tr>
+                            <td>DepartureStation</td>
+                            <td>Станція відправлення</td>
+                        </tr>
+                        <tr>
+                            <td>ArrivalStation</td>
+                            <td>Станція прибуття</td>
+                        </tr>
+                        <tr>
+                            <td>RouteLength</td>
+                            <td>Довжина маршруту</td>
+                        </tr>
+                        <tr>
+                            <td>Trains</td>
+                            <td>Потяги, що доставлятимуть замовлення. <strong>Повна властивість</strong></td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас System -->
+                        <tr>
+                            <td rowspan="4">System</td>
+                            <td>IsStarted</td>
+                            <td>Показує, чи система запущена</td>
+                        </tr>
+                        <tr>
+                            <td>Administrator</td>
+                            <td>Адміністратор, який працює з системою</td>
+                        </tr>
+                        <tr>
+                            <td>Stations</td>
+                            <td>Список станцій залізниці. <strong>Повна властивість</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Deliveries</td>
+                            <td>Список всіх замовлень в системі. <strong>Повна властивість</strong></td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Station -->
+                        <tr>
+                            <td rowspan="3">Station</td>
+                            <td>Name</td>
+                            <td>Навза станції</td>
+                        </tr>
+                        <tr>
+                            <td>Locomotives</td>
+                            <td>Локомотиви, що знаходяться на станції в даний момент</td>
+                        </tr>
+                        <tr>
+                            <td>Wagons</td>
+                            <td>Вагони, що знаходяться на станції в даний момент</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Train -->
+                        <tr>
+                            <td rowspan="2">Train</td>
+                            <td>Locomotive</td>
+                            <td>Локомотив потяга</td>
+                        </tr>
+                        <tr>
+                            <td>Wagons</td>
+                            <td>Список вагонів потяга.</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Locomotive -->
+                        <tr>
+                            <td rowspan="2">Locomotive</td>
+                            <td>MaximumWeight</td>
+                            <td>Максимальне навантаження вагона</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>Вага самого вагона</td>
+                        </tr>
+                        <!-- #endregion -->
+                        <!-- #region Клас Wagon -->
+                        <tr>
+                            <td rowspan="3">Wagon</td>
+                            <td>Weight</td>
+                            <td>Вага вагона</td>
+                        </tr>
+                        <tr>
+                            <td>MaximumWeight</td>
+                            <td>Макстимальне навантаження вагона</td>
+                        </tr>
+                        <tr>
+                            <td>Volume</td>
+                            <td>Об'єм вагона</td>
+                        </tr>
+                        <!-- #endregion -->
+                    </table>
+                </div>
+                <!-- 4.1 UML-діаграма класів -->
+                <div id="4-1" hidden>
+                    <h4>4.1 UML-діаграма класів</h4>
+                    <p>Діаграма класів:</p>
+                    <img src="./Діаграма класів.png" height="600" width="980">
+                    <p>Публічні атрибути вказують на наявність відповідних властивостей, а приватні - на поля, що не відносяться до властивостей.</p>
+                </div>
+                <!-- 5.1 Файлова структура проекту -->
+                <div id="5-1" hidden>
+                    <h4>5.1 Файлова структура проекту</h4>
+                    <p>Файлова структура проекту:</p>
+                    <img src="./Файлова структура проекту.png">
+                </div>
+                <!-- 5.2 Програмний код всіх файлів. Результат виконання програми. -->
+                <div id="5-2" hidden>
+                    <h4>5.2 Програмний код всіх файлів. Результат виконання програми.</h4>
+                    <p>Програмний код класу Program:</p>
+                    <img src="./Код Program.png">
+                    <p>Програмний код класу Administrator:</p>
+                    <img src="./Код Administrator.png">
+                    <p>Програмний код класу Client:</p>
+                    <img src="./Код Client.png">
+                    <p>Програмний код класу System:</p>
+                    <img src="./Код System.png">
+                    <p>Програмний код класу Delivery:</p>
+                    <img src="./Код Delivery.png">
+                    <p>Програмний код класу Station:</p>
+                    <img src="./Код Station.png">
+                    <p>Програмний код класу Train:</p>
+                    <img src="./Код Train.png">
+                    <p>Програмний код класу Locomotive:</p>
+                    <img src="./Код Locomotive.png">
+                    <p>Програмний код класу Wagon:</p>
+                    <img src="./Код Wagon.png">
+                    <p>Результат виконання програми:</p>
+                    <img src="./Результат виконання програми.png">
+                </div>
+                <!-- 7.1 Висновки -->
+                <div id="7-1" hidden>
+                    <h4>7.1 Висновки</h4>
+                    <p><strong>Висновок:</strong> я здійснив введення та виведення даних закритих полів класів, застосовуючи методи-властивості. Я дізнався, що властивості бувають повні і неповні (автовластивості). Кожен  з методів get і set може мати своє обмеження видимості, вужче за видимість властивості. Властивості використовуються для покращеної обробки присвоєння і отримання даних. Властивості можуть бути лише для читання; крім того, автовластивості можуть мати початкове значення.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showOnlyThisContentOnClick(id) {
+            $('.col-sm-9 div').hide();
+            $('#' + id).show();
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.navbar {
+    margin-bottom: 0px;
+}
+
+.flex-center {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.flex-center.wrappable {
+    flex-wrap: wrap;
+}
+
+.sidenav {
+    padding         : 15px;
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top     : 0px;
+    left    : 105%
+}
+
+@media screen and (max-width: 767px) {
+    .dropdown-menu {
+        position: absolute;
+        top     : initial;
+        left    : initial;
+    }
+}
