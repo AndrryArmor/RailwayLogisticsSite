@@ -1,0 +1,7 @@
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\obj\Debug\RailwayLogistics.csprojAssemblyReference.cache
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\obj\Debug\RailwayLogistics.csproj.CoreCompileInputs.cache
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\bin\Debug\RailwayLogistics.exe.config
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\bin\Debug\RailwayLogistics.exe
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\bin\Debug\RailwayLogistics.pdb
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\obj\Debug\RailwayLogistics.exe
+E:\AndrryArmor\Git Repositories\RailwayLogistics\RailwayLogistics\obj\Debug\RailwayLogistics.pdb
